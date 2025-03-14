@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+ <h2>Register</h2>
+    <form action="RegisterServlet" method="post">
+    	<input type="hidden" name="user_role" value="USER">
+    	
+        UserName :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="username" placeholder="UserName" required><br><br>
+        Phone Number : <input type="text" name="phone" placeholder="PhoneNumber"
+            pattern="[6-9]\d{9}" 
+            title="Phone number must be 10 digits and start with 6-9" required><br><br>
+        Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" placeholder="Email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+            title="Enter a valid email address" required><br><br>
+        Password : <input type="password" name="password" placeholder=" Password"
+            pattern=".{6,}" 
+            title="Password must be atLeast 6 characters long" required><br><br>
+          
+        
+        <h3>Address Details</h3>
+        Street: <input type="text" name="street" placeholder="Street" required><br><br>
+        City: <select name="city" id="city" required>
+            <option value="">Select City</option>
+            <option value="Kochi">Kochi</option>
+            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+        </select><br><br>
+        State: <select name="state" id="state" required>
+            <option value="">Select State</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+        </select><br><br>
+        PinCode: <input type="text" name="pincode" placeholder="pincode" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

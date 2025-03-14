@@ -1,0 +1,13 @@
+package com.savorybox;
+
+import javax.servlet.http.HttpServlet;
+
+public class RegisterServlet extends HttpServlet{
+
+	 private static final long serialVersionUID = 1L;
+	    
+	    final String driver = "com.mysql.cj.jdbc.Driver";
+	    final String url = "jdbc:mysql://localhost:3306/luminar_servlet";
+	    final String user = "root";
+	    final String pass = "password1";
+}

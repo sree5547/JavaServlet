@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+ <h2>Register</h2>
+    <form action="RegisterServlet" method="post">
+        UserName :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="username" required><br><br>
+        Phone Number : <input type="text" name="phone" placeholder="phoneNumber"
+            pattern="[6-9]\d{9}" 
+            title="Phone number must be 10 digits and start with 6-9" required><br><br>
+        Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" required><br><br>
+        Password : <input type="password" name="password" required><br><br>
+        
+        <h3>Address Details</h3>
+        Street: <input type="text" name="street" required><br><br>
+        City: <input type="text" name="city" required><br><br>
+        State: <input type="text" name="state" required><br><br>
+        PinCode: <input type="text" name="pincode" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

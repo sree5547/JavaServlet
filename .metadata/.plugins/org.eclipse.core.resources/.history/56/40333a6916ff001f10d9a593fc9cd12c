@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+<form action="RegisterServlet" method="post">
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" required><br><br>
+
+        <label>Phone Number:</label>
+        <input type="text" name="phone" required><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" required></textarea><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

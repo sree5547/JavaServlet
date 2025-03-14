@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+	<form action="LoginServlet" method="post">
+		<label>Email:</label> <input type="email" name="email" required><br>
+		<br> <label>Password:</label> <input type="password"
+			name="password" required><br>
+		<br>
+
+		<button type="submit">Login</button>
+	</form>
+	<br>
+
+	<p>
+		New user? <a href="register.html">Register here</a>
+	</p>
+
+</body>
+</html>
