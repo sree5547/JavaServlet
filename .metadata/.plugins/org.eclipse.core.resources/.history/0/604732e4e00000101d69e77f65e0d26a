@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="window.location.href='placeOrder.html'">Order Now</button>
+    <button onclick="window.location.href='viewMenu.html'">View Menu</button>
+    <h1>Select a Package</h1>
+    
+    <script>
+    fetch('getPackages')
+        .then(response => response.json())
+        .then(data => {
+            const packagesDiv = document.getElementById('packages');
+            data.forEach(pkg => {
+                const packageDiv = document.createElement('div');
+                packageDiv.className = 'package';
+                packageDiv.innerHTML = `
+                    <h2>${pkg.package_name}</h2>
+                    <p>${pkg.description}</p>
+                    <p>Price: $${pkg.price}</p>
+                    <p>Duration: ${pkg.duration} days</p>
+                `;
+                packagesDiv.appendChild(packageDiv);
+            });
+        });
+</script>
+</body>
+</html>

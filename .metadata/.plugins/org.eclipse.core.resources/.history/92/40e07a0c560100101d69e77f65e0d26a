@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Savory Box</title>
+</head>
+<body>
+	<h2>Welcome to Taste our Homely Lunch Box!</h2>
+	<a href="login.html">Sign-in</a>
+	<a href="register.html">Sign-Up</a>
+</body>
+</html>

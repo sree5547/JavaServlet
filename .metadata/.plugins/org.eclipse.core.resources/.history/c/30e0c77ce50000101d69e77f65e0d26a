@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<button class="logout-button" onclick="logout()">Logout</button>
+	<h1>Welcome to Your DashBoard</h1>
+	<p>Select an option to continue:</p>
+
+	<a href="viewPackage.html" class="button">Place New Order</a>
+	<a href="orderHistory.html" class="button">View Order History</a>
+
+
+	<script>
+    function logout() {
+        fetch('logout', {
+            method: 'POST'
+        }).then(response => {
+            if (response.ok) {
+                window.location.href = 'login.html'; // Redirect to login page
+            } else {
+                alert('Failed to log out.');
+            }
+        });
+    }
+</script>
+</body>
+</html>
